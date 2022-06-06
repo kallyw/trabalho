@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    text-align: left;
+    height: 300px;
+    padding: 27px;
+    background-image: url(img/wp2729921.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.avatar {
+    border-radius: 60%;
+}
+.user-name {
+    font-size: 40px;
+    margin-top: 30px;
+    color: rgb(100, 73, 255);
+    text-align: left;
+}
+h2 {
+    font-size: 24px;
+    font-family: cursive;
+    text-align: left;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding-left: 0px;
+}
+.wallpaper {
+    background-color: aquamarine;
+}
+mark {
+    background-color: rgb(0, 0, 0);
+}
+.desenho {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+}
+h1 {
+    font-family: cursive;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.912);
+    padding: auto;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    height: 100px;
+}
+.final {
+    width: 300px;
+    height: 300px;
+    border-radius: 30%;
+    border: 5px solid;
+    border-color: black;
+    box-shadow: 20px 20px 20px black;
+    opacity: 0.5px;
+    
+}
+.border {
+    border: 5px solid;
+    border-color: rgb(136, 16, 130);
+    width: 250px;
+    height: 250px;
+}
+.borda {
+    border: 3px solid;
+    border-color: rgb(0, 0, 0);
+    width: 150px;
+    height: 150px;
+}
+.houver {
+    background-color: brown;
+} 
+.icon {
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    color: blueviolet;
+}
+.instagram {
+    background-image: url("img/instagram.png");
+
+}
+.twitter {
+    background-image: url("img/twitter.png");
+}
+
+.carousel-wrapper {
+    height: 300px;
+    position: relative;
+    width: 300px;
+    display: block;
+    border: 2px solid black;
+    border-radius: 10%;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2px;
+  }
+  .arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+  
+  }
+  .arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  [id^= "item"] {
+    display: none;
+  }
+  .item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('img/desenho.jpeg');
+    background-size: cover;
+  }
+  .item-2 {
+    background: url('img/desenho2.jpeg');
+    background-size: cover;
+  }
+  .item-3 {
+    background: url('img/desenho3.jpeg');
+    background-size: cover;
+  }
+  .item-4 {
+    background: url('img/desenho4.jpeg');
+    background-size: cover;
+  }
+  .item-5 {
+    background: url('img/desenho10.jpeg');
+    background-size: cover;
+  }
+  .item-6 {
+    background: url('img/desenho6.jpeg');
+    background-size: cover;
+  }
+  .item-7 {
+    background: url('img/desenho7.jpeg');
+    background-size: cover;
+  }
+
+  .item-8 {
+    background: url('img/desenho8.jpeg');
+    background-size: cover;
+  }
+  
+  *:target ~ .item-1{
+    opacity: 0;
+  }
+  #item-1:target ~ .item-1 {
+    opacity: 1;
+    border-radius: 10%;
+  
+  }
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4, #item-5:target ~ .item-5, #item-6:target ~ .item-6,
+  #item-7:target ~ .item-7, #item-8:target ~ .item-8{
+    z-index: 3;
+    opacity: 1;
+    border-radius: 10%;
+  } 

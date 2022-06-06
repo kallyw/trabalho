@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo3.css">
+    <link rel="shortcut icon" href="img/unitinsicon.ico" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+   <h1>Formulário</h1>
+
+    <form>
+        <fieldset>
+            <legend>contatos Pessoais</legend>
+
+            <p><label for="e-mail">E-mail:</label>
+            <input id="e-mail" name="e-mail" placeholder="Insira seu E-mail" required> </p>
+
+            <p><label for="telefone">Telefone:</label>
+            <input id="telefone" name="telefone" placeholder="(00)0000-0000" required> </p>
+
+            <p><label for="midia social">midia social:</label>
+            <input id="midia social" name="midia social" placeholder="@********" required> </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Informaçoes pessoais</legend>
+
+            <p><label for="nome">Nome:</label>
+                <input id="nome" name="nome" placeholder="Insira seu nome" required autofocus> </p>
+            
+            <p><label for="idade">Idade:</label>
+            <input id="idade" name="idade" placeholder="informe sua idade" required autofocus> </p>
+
+            <p><label for="Estado">Estado:</label>
+                <select id="Estado" name="Estado">
+                <option value="PA">Palmas</option>
+                <option value="PE">Palmas2</option>
+                <option value="PI">Palmas3</option>
+                <option value="PO">Palmas4</option>
+                <option value="PU">Palmas5</option> 
+                </select> </p>
+    
+            <p><label for="cidade">Cidade:</label>
+                <select id="cidade" name="cidade">
+                <option value="PA">Palmas</option>
+                <option value="PE">Palmas2</option>
+                <option value="PI">Palmas3</option>
+                <option value="PO">Palmas4</option>
+                <option value="PU">Palmas5</option> 
+                </select> </p>
+
+            <p><label>Masculino:<input type="radio" name="sexo" value="masculino"></label>
+            <label>Feminino:<input type="radio" name="sexo" value="Feminino"></label>
+            <label>Não comentar:<input type="radio" name="sexo" value="não comentar"></label> </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Assunto:</legend>
+            <p><label for="comentario">comentario:</label>
+                <select id="comentario" name="comentario">
+                <option value="Dvida">Duvida</option>
+                <option value="Pergunta">Pergunta</option>
+                <option value="Outros">Outros</option> 
+                </select> </p>
+
+            <p><label for="msg">Mensagem:</label></p>
+            <textarea name="msg" id="Mensagem" cols="40" rows="3"></textarea>
+            <button type="submit">Enviar</button> 
+        </fieldset>
+
+        <fieldset>
+            <legend> menu principal </legend>
+            <a href="T.menu.principa.html">
+                <button type="button" class="list-group-item list-group-item-action"> Menu Principal </button>
+                </a>
+
+                <button type="reset">limpar</button>
+                
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>

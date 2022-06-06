@@ -1,0 +1,49 @@
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "article nav ads"
+    "footer nav ads";
+  grid-template-rows: 80px 1fr 70px;  
+  grid-template-columns: 1fr 20% 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 10px;
+  background-color: aquamarine;
+  }  
+
+header{
+  background: bisque;
+  grid-area: header;
+  border: 4px solid black;
+  text-align: center;
+}
+
+footer {
+  padding: 1.2em;
+  background: whitesmoke;
+  grid-area: footer;
+  border: 3px solid black;
+}
+
+article {
+  padding: 1.2em;
+  background: burlywood;
+  grid-area: article;
+  border: 3px solid black;
+  box-sizing: content-box;
+}
+
+nav {
+  padding: 1.2em;
+  background: rgb(175, 194, 191);
+  grid-area: nav;
+  border: 3px solid black;
+  width: 432px;
+}
+
+h2 {
+  text-align: center;
+}
+
